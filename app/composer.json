@@ -1,6 +1,6 @@
 {
     "name": "pavelsergeevich/datetime-package",
-    "description": "Расширение возможносмтей \\DateTime",
+    "description": "Расширение возможностей \\DateTime",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -9,8 +9,10 @@
     },
     "authors": [
         {
-            "name": "зpavelsergeevich"
+            "name": "pavelsergeevich"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=5.2.0"
+    }
 }
