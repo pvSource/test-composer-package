@@ -13,7 +13,10 @@ composer require pavelsergeevich\test-composer-package
 
 ## Использование 
 ```php
-$dateTimeFirst = new CustomDateTime();
-$dateTimeSecond = new CustomDateTime('29.10.2022');
-$isDateTimeFirstOlder = $dateTimeFirst->isOlder($dateTimeSecond);
+use \Pavelsergeevich\DatetimePackage\CustomDateTime;
+
+$customDateTime = new CustomDateTime();
+$startWeek = $customDateTime->getStartWeek(CustomDateTime::FORMAT_MYSQL);
+
+echo "Понедельник текущий недели: $startWeek";
 ```
